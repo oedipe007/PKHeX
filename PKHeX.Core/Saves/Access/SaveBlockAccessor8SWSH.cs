@@ -26,6 +26,7 @@ namespace PKHeX.Core
         public TitleScreen8 TitleScreen { get; }
         public TeamIndexes8 TeamIndexes { get; }
         public HallOfFameTime8 FameTime { get; }
+        public CurryDex8 CurryDex { get; }
 
         public SaveBlockAccessor8SWSH(SAV8SWSH sav)
         {
@@ -34,6 +35,7 @@ namespace PKHeX.Core
             PartyInfo = new Party8(sav, GetBlock(KParty));
             Items = new MyItem8(sav, GetBlock(KItem));
             Zukan = new Zukan8(sav, GetBlock(KZukan), GetBlockSafe(KZukanR1), GetBlockSafe(KZukanR2));
+            CurryDex = new CurryDex8(sav, GetBlock(KCurryDex));
             MyStatus = new MyStatus8(sav, GetBlock(KMyStatus));
             Misc = new Misc8(sav, GetBlock(KMisc));
             BoxLayout = new BoxLayout8(sav, GetBlock(KBoxLayout));
