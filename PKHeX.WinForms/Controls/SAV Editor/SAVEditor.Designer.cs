@@ -82,7 +82,9 @@
             this.B_MailBox = new System.Windows.Forms.Button();
             this.B_OpenApricorn = new System.Windows.Forms.Button();
             this.B_Raids = new System.Windows.Forms.Button();
+            this.B_RaidArmor = new System.Windows.Forms.Button();
             this.B_Blocks = new System.Windows.Forms.Button();
+            this.B_OpenCurryDex = new System.Windows.Forms.Button();
             this.L_SaveSlot = new System.Windows.Forms.Label();
             this.L_Secure2 = new System.Windows.Forms.Label();
             this.TB_Secure2 = new System.Windows.Forms.TextBox();
@@ -93,7 +95,6 @@
             this.TB_GameSync = new System.Windows.Forms.TextBox();
             this.B_SaveBoxBin = new System.Windows.Forms.Button();
             this.B_VerifyCHK = new System.Windows.Forms.Button();
-            this.B_RaidArmor = new System.Windows.Forms.Button();
             this.tabBoxMulti.SuspendLayout();
             this.Tab_Box.SuspendLayout();
             this.Tab_PartyBattle.SuspendLayout();
@@ -127,10 +128,10 @@
             // 
             this.Tab_Box.AllowDrop = true;
             this.Tab_Box.Controls.Add(this.Box);
-            this.Tab_Box.Location = new System.Drawing.Point(4, 22);
+            this.Tab_Box.Location = new System.Drawing.Point(4, 29);
             this.Tab_Box.Name = "Tab_Box";
             this.Tab_Box.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_Box.Size = new System.Drawing.Size(441, 337);
+            this.Tab_Box.Size = new System.Drawing.Size(441, 330);
             this.Tab_Box.TabIndex = 0;
             this.Tab_Box.Text = "Box";
             this.Tab_Box.UseVisualStyleBackColor = true;
@@ -155,10 +156,10 @@
             // 
             this.Tab_PartyBattle.AllowDrop = true;
             this.Tab_PartyBattle.Controls.Add(this.SL_Party);
-            this.Tab_PartyBattle.Location = new System.Drawing.Point(4, 22);
+            this.Tab_PartyBattle.Location = new System.Drawing.Point(4, 29);
             this.Tab_PartyBattle.Name = "Tab_PartyBattle";
             this.Tab_PartyBattle.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_PartyBattle.Size = new System.Drawing.Size(441, 337);
+            this.Tab_PartyBattle.Size = new System.Drawing.Size(441, 330);
             this.Tab_PartyBattle.TabIndex = 1;
             this.Tab_PartyBattle.Text = "Party";
             this.Tab_PartyBattle.UseVisualStyleBackColor = true;
@@ -178,9 +179,9 @@
             this.Tab_Other.Controls.Add(this.SL_Extra);
             this.Tab_Other.Controls.Add(this.GB_Daycare);
             this.Tab_Other.Controls.Add(this.L_ReadOnlyOther);
-            this.Tab_Other.Location = new System.Drawing.Point(4, 22);
+            this.Tab_Other.Location = new System.Drawing.Point(4, 29);
             this.Tab_Other.Name = "Tab_Other";
-            this.Tab_Other.Size = new System.Drawing.Size(441, 337);
+            this.Tab_Other.Size = new System.Drawing.Size(441, 330);
             this.Tab_Other.TabIndex = 2;
             this.Tab_Other.Text = "Other";
             this.Tab_Other.UseVisualStyleBackColor = true;
@@ -192,7 +193,7 @@
             this.SL_Extra.Location = new System.Drawing.Point(366, 0);
             this.SL_Extra.Name = "SL_Extra";
             this.SL_Extra.SAV = null;
-            this.SL_Extra.Size = new System.Drawing.Size(75, 337);
+            this.SL_Extra.Size = new System.Drawing.Size(75, 330);
             this.SL_Extra.TabIndex = 30;
             this.SL_Extra.ViewIndex = -1;
             // 
@@ -221,7 +222,7 @@
             this.L_XP2.AutoSize = true;
             this.L_XP2.Location = new System.Drawing.Point(74, 88);
             this.L_XP2.Name = "L_XP2";
-            this.L_XP2.Size = new System.Drawing.Size(30, 13);
+            this.L_XP2.Size = new System.Drawing.Size(43, 20);
             this.L_XP2.TabIndex = 17;
             this.L_XP2.Text = "+XP:";
             // 
@@ -230,7 +231,7 @@
             this.L_XP1.AutoSize = true;
             this.L_XP1.Location = new System.Drawing.Point(74, 35);
             this.L_XP1.Name = "L_XP1";
-            this.L_XP1.Size = new System.Drawing.Size(30, 13);
+            this.L_XP1.Size = new System.Drawing.Size(43, 20);
             this.L_XP1.TabIndex = 16;
             this.L_XP1.Text = "+XP:";
             // 
@@ -239,7 +240,7 @@
             this.TB_Daycare2XP.Location = new System.Drawing.Point(108, 85);
             this.TB_Daycare2XP.Name = "TB_Daycare2XP";
             this.TB_Daycare2XP.ReadOnly = true;
-            this.TB_Daycare2XP.Size = new System.Drawing.Size(73, 20);
+            this.TB_Daycare2XP.Size = new System.Drawing.Size(73, 26);
             this.TB_Daycare2XP.TabIndex = 15;
             // 
             // TB_Daycare1XP
@@ -247,7 +248,7 @@
             this.TB_Daycare1XP.Location = new System.Drawing.Point(108, 32);
             this.TB_Daycare1XP.Name = "TB_Daycare1XP";
             this.TB_Daycare1XP.ReadOnly = true;
-            this.TB_Daycare1XP.Size = new System.Drawing.Size(73, 20);
+            this.TB_Daycare1XP.Size = new System.Drawing.Size(73, 26);
             this.TB_Daycare1XP.TabIndex = 14;
             // 
             // L_DC2
@@ -255,7 +256,7 @@
             this.L_DC2.AutoSize = true;
             this.L_DC2.Location = new System.Drawing.Point(74, 71);
             this.L_DC2.Name = "L_DC2";
-            this.L_DC2.Size = new System.Drawing.Size(19, 13);
+            this.L_DC2.Size = new System.Drawing.Size(26, 20);
             this.L_DC2.TabIndex = 13;
             this.L_DC2.Text = "2: ";
             // 
@@ -264,7 +265,7 @@
             this.L_DC1.AutoSize = true;
             this.L_DC1.Location = new System.Drawing.Point(74, 18);
             this.L_DC1.Name = "L_DC1";
-            this.L_DC1.Size = new System.Drawing.Size(19, 13);
+            this.L_DC1.Size = new System.Drawing.Size(26, 20);
             this.L_DC1.TabIndex = 12;
             this.L_DC1.Text = "1: ";
             // 
@@ -273,7 +274,7 @@
             this.L_DaycareSeed.AutoSize = true;
             this.L_DaycareSeed.Location = new System.Drawing.Point(23, 143);
             this.L_DaycareSeed.Name = "L_DaycareSeed";
-            this.L_DaycareSeed.Size = new System.Drawing.Size(35, 13);
+            this.L_DaycareSeed.Size = new System.Drawing.Size(51, 20);
             this.L_DaycareSeed.TabIndex = 9;
             this.L_DaycareSeed.Text = "Seed:";
             // 
@@ -283,7 +284,7 @@
             this.TB_RNGSeed.Location = new System.Drawing.Point(61, 140);
             this.TB_RNGSeed.MaxLength = 16;
             this.TB_RNGSeed.Name = "TB_RNGSeed";
-            this.TB_RNGSeed.Size = new System.Drawing.Size(120, 20);
+            this.TB_RNGSeed.Size = new System.Drawing.Size(120, 26);
             this.TB_RNGSeed.TabIndex = 8;
             this.TB_RNGSeed.Text = "0123456789ABCDEF";
             this.TB_RNGSeed.Validated += new System.EventHandler(this.UpdateStringSeed);
@@ -314,7 +315,7 @@
             this.DayCare_HasEgg.Enabled = false;
             this.DayCare_HasEgg.Location = new System.Drawing.Point(61, 123);
             this.DayCare_HasEgg.Name = "DayCare_HasEgg";
-            this.DayCare_HasEgg.Size = new System.Drawing.Size(91, 17);
+            this.DayCare_HasEgg.Size = new System.Drawing.Size(131, 24);
             this.DayCare_HasEgg.TabIndex = 7;
             this.DayCare_HasEgg.Text = "Egg Available";
             this.DayCare_HasEgg.UseVisualStyleBackColor = true;
@@ -343,9 +344,9 @@
             this.Tab_SAV.Controls.Add(this.TB_GameSync);
             this.Tab_SAV.Controls.Add(this.B_SaveBoxBin);
             this.Tab_SAV.Controls.Add(this.B_VerifyCHK);
-            this.Tab_SAV.Location = new System.Drawing.Point(4, 22);
+            this.Tab_SAV.Location = new System.Drawing.Point(4, 29);
             this.Tab_SAV.Name = "Tab_SAV";
-            this.Tab_SAV.Size = new System.Drawing.Size(441, 337);
+            this.Tab_SAV.Size = new System.Drawing.Size(441, 330);
             this.Tab_SAV.TabIndex = 3;
             this.Tab_SAV.Text = "SAV";
             this.Tab_SAV.UseVisualStyleBackColor = true;
@@ -356,7 +357,7 @@
             this.CB_SaveSlot.FormattingEnabled = true;
             this.CB_SaveSlot.Location = new System.Drawing.Point(150, 148);
             this.CB_SaveSlot.Name = "CB_SaveSlot";
-            this.CB_SaveSlot.Size = new System.Drawing.Size(121, 21);
+            this.CB_SaveSlot.Size = new System.Drawing.Size(121, 28);
             this.CB_SaveSlot.TabIndex = 20;
             this.CB_SaveSlot.SelectedIndexChanged += new System.EventHandler(this.UpdateSaveSlot);
             // 
@@ -368,7 +369,7 @@
             this.GB_SAVtools.Controls.Add(this.FLP_SAVtools);
             this.GB_SAVtools.Location = new System.Drawing.Point(0, 175);
             this.GB_SAVtools.Name = "GB_SAVtools";
-            this.GB_SAVtools.Size = new System.Drawing.Size(441, 162);
+            this.GB_SAVtools.Size = new System.Drawing.Size(441, 155);
             this.GB_SAVtools.TabIndex = 102;
             this.GB_SAVtools.TabStop = false;
             // 
@@ -405,10 +406,11 @@
             this.FLP_SAVtools.Controls.Add(this.B_Raids);
             this.FLP_SAVtools.Controls.Add(this.B_RaidArmor);
             this.FLP_SAVtools.Controls.Add(this.B_Blocks);
+            this.FLP_SAVtools.Controls.Add(this.B_OpenCurryDex);
             this.FLP_SAVtools.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FLP_SAVtools.Location = new System.Drawing.Point(3, 16);
+            this.FLP_SAVtools.Location = new System.Drawing.Point(3, 22);
             this.FLP_SAVtools.Name = "FLP_SAVtools";
-            this.FLP_SAVtools.Size = new System.Drawing.Size(435, 143);
+            this.FLP_SAVtools.Size = new System.Drawing.Size(435, 130);
             this.FLP_SAVtools.TabIndex = 101;
             // 
             // B_OpenTrainerInfo
@@ -694,6 +696,16 @@
             this.B_Raids.UseVisualStyleBackColor = true;
             this.B_Raids.Click += new System.EventHandler(this.B_OpenRaids_Click);
             // 
+            // B_RaidArmor
+            // 
+            this.B_RaidArmor.Location = new System.Drawing.Point(3, 206);
+            this.B_RaidArmor.Name = "B_RaidArmor";
+            this.B_RaidArmor.Size = new System.Drawing.Size(87, 23);
+            this.B_RaidArmor.TabIndex = 2;
+            this.B_RaidArmor.Text = "Raids (DLC 1)";
+            this.B_RaidArmor.UseVisualStyleBackColor = true;
+            this.B_RaidArmor.Click += new System.EventHandler(this.B_OpenRaids_Click);
+            // 
             // B_Blocks
             // 
             this.B_Blocks.Location = new System.Drawing.Point(96, 206);
@@ -704,12 +716,22 @@
             this.B_Blocks.UseVisualStyleBackColor = true;
             this.B_Blocks.Click += new System.EventHandler(this.B_Blocks_Click);
             // 
+            // B_OpenCurryDex
+            // 
+            this.B_OpenCurryDex.Location = new System.Drawing.Point(189, 206);
+            this.B_OpenCurryDex.Name = "B_OpenCurryDex";
+            this.B_OpenCurryDex.Size = new System.Drawing.Size(87, 23);
+            this.B_OpenCurryDex.TabIndex = 1;
+            this.B_OpenCurryDex.Text = "Curry Dex";
+            this.B_OpenCurryDex.UseVisualStyleBackColor = true;
+            this.B_OpenCurryDex.Click += new System.EventHandler(this.B_OpenCurrydex_Click);
+            // 
             // L_SaveSlot
             // 
             this.L_SaveSlot.AutoSize = true;
             this.L_SaveSlot.Location = new System.Drawing.Point(92, 151);
             this.L_SaveSlot.Name = "L_SaveSlot";
-            this.L_SaveSlot.Size = new System.Drawing.Size(56, 13);
+            this.L_SaveSlot.Size = new System.Drawing.Size(81, 20);
             this.L_SaveSlot.TabIndex = 19;
             this.L_SaveSlot.Text = "Save Slot:";
             // 
@@ -729,7 +751,7 @@
             this.TB_Secure2.Location = new System.Drawing.Point(151, 113);
             this.TB_Secure2.MaxLength = 16;
             this.TB_Secure2.Name = "TB_Secure2";
-            this.TB_Secure2.Size = new System.Drawing.Size(120, 20);
+            this.TB_Secure2.Size = new System.Drawing.Size(120, 26);
             this.TB_Secure2.TabIndex = 17;
             this.TB_Secure2.Text = "0000000000000000";
             this.TB_Secure2.Validated += new System.EventHandler(this.UpdateStringSeed);
@@ -750,7 +772,7 @@
             this.TB_Secure1.Location = new System.Drawing.Point(151, 91);
             this.TB_Secure1.MaxLength = 16;
             this.TB_Secure1.Name = "TB_Secure1";
-            this.TB_Secure1.Size = new System.Drawing.Size(120, 20);
+            this.TB_Secure1.Size = new System.Drawing.Size(120, 26);
             this.TB_Secure1.TabIndex = 15;
             this.TB_Secure1.Text = "0000000000000000";
             this.TB_Secure1.Validated += new System.EventHandler(this.UpdateStringSeed);
@@ -781,7 +803,7 @@
             this.TB_GameSync.Location = new System.Drawing.Point(151, 69);
             this.TB_GameSync.MaxLength = 16;
             this.TB_GameSync.Name = "TB_GameSync";
-            this.TB_GameSync.Size = new System.Drawing.Size(120, 20);
+            this.TB_GameSync.Size = new System.Drawing.Size(120, 26);
             this.TB_GameSync.TabIndex = 10;
             this.TB_GameSync.Text = "0000000000000000";
             this.TB_GameSync.Validated += new System.EventHandler(this.UpdateStringSeed);
@@ -806,16 +828,6 @@
             this.B_VerifyCHK.Text = "Verify Checksums";
             this.B_VerifyCHK.UseVisualStyleBackColor = true;
             this.B_VerifyCHK.Click += new System.EventHandler(this.ClickVerifyCHK);
-            // 
-            // B_RaidArmor
-            // 
-            this.B_RaidArmor.Location = new System.Drawing.Point(3, 206);
-            this.B_RaidArmor.Name = "B_RaidArmor";
-            this.B_RaidArmor.Size = new System.Drawing.Size(87, 23);
-            this.B_RaidArmor.TabIndex = 2;
-            this.B_RaidArmor.Text = "Raids (DLC 1)";
-            this.B_RaidArmor.UseVisualStyleBackColor = true;
-            this.B_RaidArmor.Click += new System.EventHandler(this.B_OpenRaids_Click);
             // 
             // SAVEditor
             // 
@@ -907,5 +919,6 @@
         private System.Windows.Forms.Button B_Raids;
         private System.Windows.Forms.Button B_Blocks;
         private System.Windows.Forms.Button B_RaidArmor;
+        private System.Windows.Forms.Button B_OpenCurryDex;
     }
 }

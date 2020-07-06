@@ -1271,5 +1271,14 @@ namespace PKHeX.WinForms.Controls
                 _ => PKMImportSetting.UseDefault
             };
         }
+
+        private void B_OpenCurrydex_Click(object sender, EventArgs e)
+        {
+            if (SAV is SAV8SWSH s)
+            {
+                using var form = new SAV_CurryDexSWSH(s);
+                form.ShowDialog();
+            }
+        }
     }
 }

@@ -35,5 +35,10 @@ namespace PKHeX.WinForms
         {
 
         }
+
+        private void CHK_HasLastCooking_CheckedChanged(object sender, EventArgs e)
+        {
+            CAL_LastCookingDate.Enabled = !CAL_LastCookingDate.Enabled;
+        }
     }
 }
