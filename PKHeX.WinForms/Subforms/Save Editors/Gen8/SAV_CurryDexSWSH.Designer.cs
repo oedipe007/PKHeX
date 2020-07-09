@@ -32,39 +32,39 @@
             this.B_Cancel = new System.Windows.Forms.Button();
             this.LB_AllCurry = new System.Windows.Forms.ListBox();
             this.GB_FirstCookingData = new System.Windows.Forms.GroupBox();
-            this.GB_Sizes = new System.Windows.Forms.GroupBox();
-            this.CHK_BigSize = new System.Windows.Forms.CheckBox();
-            this.CHK_NediumSize = new System.Windows.Forms.CheckBox();
-            this.CHK_SmallSize = new System.Windows.Forms.CheckBox();
             this.CB_EatingLocation1 = new System.Windows.Forms.ComboBox();
+            this.NUD_NbPokemon1 = new System.Windows.Forms.NumericUpDown();
             this.TB_PokemonName1 = new System.Windows.Forms.TextBox();
-            this.CHK_HasLastCooking = new System.Windows.Forms.CheckBox();
-            this.CAL_LastCookingDate = new System.Windows.Forms.DateTimePicker();
-            this.L_LastCookingDate = new System.Windows.Forms.Label();
             this.CAL_FirstCookingDate = new System.Windows.Forms.DateTimePicker();
             this.L_FirstCookingDate = new System.Windows.Forms.Label();
             this.L_EatingLocation1 = new System.Windows.Forms.Label();
             this.L_NbPokemon1 = new System.Windows.Forms.Label();
             this.L_PokemonName1 = new System.Windows.Forms.Label();
+            this.GB_Sizes = new System.Windows.Forms.GroupBox();
+            this.CHK_BigSize = new System.Windows.Forms.CheckBox();
+            this.CHK_NediumSize = new System.Windows.Forms.CheckBox();
+            this.CHK_SmallSize = new System.Windows.Forms.CheckBox();
+            this.CHK_HasLastCooking = new System.Windows.Forms.CheckBox();
+            this.CAL_LastCookingDate = new System.Windows.Forms.DateTimePicker();
+            this.L_LastCookingDate = new System.Windows.Forms.Label();
             this.L_Medal = new System.Windows.Forms.Label();
             this.CB_Medal = new System.Windows.Forms.ComboBox();
             this.L_NbCooking = new System.Windows.Forms.Label();
             this.CHK_IsNew = new System.Windows.Forms.CheckBox();
             this.GB_LastCookingData = new System.Windows.Forms.GroupBox();
+            this.NUD_NbPokemon2 = new System.Windows.Forms.NumericUpDown();
             this.CB_EatingLocation2 = new System.Windows.Forms.ComboBox();
             this.TB_PokemonName2 = new System.Windows.Forms.TextBox();
             this.L_EatingLocation2 = new System.Windows.Forms.Label();
             this.L_NbPokemon2 = new System.Windows.Forms.Label();
             this.L_PokemonName2 = new System.Windows.Forms.Label();
             this.NUD_NbCooking = new System.Windows.Forms.NumericUpDown();
-            this.NUD_NbPokemon1 = new System.Windows.Forms.NumericUpDown();
-            this.NUD_NbPokemon2 = new System.Windows.Forms.NumericUpDown();
             this.GB_FirstCookingData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon1)).BeginInit();
             this.GB_Sizes.SuspendLayout();
             this.GB_LastCookingData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).BeginInit();
             this.SuspendLayout();
             // 
             // B_Save
@@ -117,55 +117,27 @@
             this.GB_FirstCookingData.TabStop = false;
             this.GB_FirstCookingData.Text = "First cooking datas";
             // 
-            // GB_Sizes
-            // 
-            this.GB_Sizes.Controls.Add(this.CHK_BigSize);
-            this.GB_Sizes.Controls.Add(this.CHK_NediumSize);
-            this.GB_Sizes.Controls.Add(this.CHK_SmallSize);
-            this.GB_Sizes.Location = new System.Drawing.Point(143, 12);
-            this.GB_Sizes.Name = "GB_Sizes";
-            this.GB_Sizes.Size = new System.Drawing.Size(242, 68);
-            this.GB_Sizes.TabIndex = 43;
-            this.GB_Sizes.TabStop = false;
-            this.GB_Sizes.Text = "Sizes";
-            // 
-            // CHK_BigSize
-            // 
-            this.CHK_BigSize.AutoSize = true;
-            this.CHK_BigSize.Location = new System.Drawing.Point(183, 38);
-            this.CHK_BigSize.Name = "CHK_BigSize";
-            this.CHK_BigSize.Size = new System.Drawing.Size(58, 24);
-            this.CHK_BigSize.TabIndex = 44;
-            this.CHK_BigSize.Text = "Big";
-            this.CHK_BigSize.UseVisualStyleBackColor = true;
-            // 
-            // CHK_NediumSize
-            // 
-            this.CHK_NediumSize.AutoSize = true;
-            this.CHK_NediumSize.Location = new System.Drawing.Point(86, 38);
-            this.CHK_NediumSize.Name = "CHK_NediumSize";
-            this.CHK_NediumSize.Size = new System.Drawing.Size(91, 24);
-            this.CHK_NediumSize.TabIndex = 43;
-            this.CHK_NediumSize.Text = "Medium";
-            this.CHK_NediumSize.UseVisualStyleBackColor = true;
-            // 
-            // CHK_SmallSize
-            // 
-            this.CHK_SmallSize.AutoSize = true;
-            this.CHK_SmallSize.Location = new System.Drawing.Point(6, 38);
-            this.CHK_SmallSize.Name = "CHK_SmallSize";
-            this.CHK_SmallSize.Size = new System.Drawing.Size(74, 24);
-            this.CHK_SmallSize.TabIndex = 42;
-            this.CHK_SmallSize.Text = "Small";
-            this.CHK_SmallSize.UseVisualStyleBackColor = true;
-            // 
             // CB_EatingLocation1
             // 
+            this.CB_EatingLocation1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CB_EatingLocation1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CB_EatingLocation1.FormattingEnabled = true;
             this.CB_EatingLocation1.Location = new System.Drawing.Point(214, 114);
             this.CB_EatingLocation1.Name = "CB_EatingLocation1";
             this.CB_EatingLocation1.Size = new System.Drawing.Size(182, 28);
             this.CB_EatingLocation1.TabIndex = 41;
+            // 
+            // NUD_NbPokemon1
+            // 
+            this.NUD_NbPokemon1.Location = new System.Drawing.Point(13, 114);
+            this.NUD_NbPokemon1.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.NUD_NbPokemon1.Name = "NUD_NbPokemon1";
+            this.NUD_NbPokemon1.Size = new System.Drawing.Size(149, 26);
+            this.NUD_NbPokemon1.TabIndex = 47;
             // 
             // TB_PokemonName1
             // 
@@ -174,38 +146,6 @@
             this.TB_PokemonName1.Name = "TB_PokemonName1";
             this.TB_PokemonName1.Size = new System.Drawing.Size(149, 26);
             this.TB_PokemonName1.TabIndex = 40;
-            // 
-            // CHK_HasLastCooking
-            // 
-            this.CHK_HasLastCooking.AutoSize = true;
-            this.CHK_HasLastCooking.Location = new System.Drawing.Point(115, 244);
-            this.CHK_HasLastCooking.Name = "CHK_HasLastCooking";
-            this.CHK_HasLastCooking.Size = new System.Drawing.Size(22, 21);
-            this.CHK_HasLastCooking.TabIndex = 39;
-            this.CHK_HasLastCooking.UseVisualStyleBackColor = true;
-            this.CHK_HasLastCooking.CheckedChanged += new System.EventHandler(this.CHK_HasLastCooking_CheckedChanged);
-            // 
-            // CAL_LastCookingDate
-            // 
-            this.CAL_LastCookingDate.Enabled = false;
-            this.CAL_LastCookingDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.CAL_LastCookingDate.Location = new System.Drawing.Point(214, 57);
-            this.CAL_LastCookingDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CAL_LastCookingDate.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
-            this.CAL_LastCookingDate.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.CAL_LastCookingDate.Name = "CAL_LastCookingDate";
-            this.CAL_LastCookingDate.Size = new System.Drawing.Size(181, 26);
-            this.CAL_LastCookingDate.TabIndex = 38;
-            this.CAL_LastCookingDate.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            // 
-            // L_LastCookingDate
-            // 
-            this.L_LastCookingDate.AutoSize = true;
-            this.L_LastCookingDate.Location = new System.Drawing.Point(209, 32);
-            this.L_LastCookingDate.Name = "L_LastCookingDate";
-            this.L_LastCookingDate.Size = new System.Drawing.Size(150, 20);
-            this.L_LastCookingDate.TabIndex = 37;
-            this.L_LastCookingDate.Text = "Date of last cooking";
             // 
             // CAL_FirstCookingDate
             // 
@@ -254,6 +194,80 @@
             this.L_PokemonName1.Size = new System.Drawing.Size(120, 20);
             this.L_PokemonName1.TabIndex = 10;
             this.L_PokemonName1.Text = "Pokemon name";
+            // 
+            // GB_Sizes
+            // 
+            this.GB_Sizes.Controls.Add(this.CHK_BigSize);
+            this.GB_Sizes.Controls.Add(this.CHK_NediumSize);
+            this.GB_Sizes.Controls.Add(this.CHK_SmallSize);
+            this.GB_Sizes.Location = new System.Drawing.Point(143, 12);
+            this.GB_Sizes.Name = "GB_Sizes";
+            this.GB_Sizes.Size = new System.Drawing.Size(242, 68);
+            this.GB_Sizes.TabIndex = 43;
+            this.GB_Sizes.TabStop = false;
+            this.GB_Sizes.Text = "Sizes";
+            // 
+            // CHK_BigSize
+            // 
+            this.CHK_BigSize.AutoSize = true;
+            this.CHK_BigSize.Location = new System.Drawing.Point(183, 38);
+            this.CHK_BigSize.Name = "CHK_BigSize";
+            this.CHK_BigSize.Size = new System.Drawing.Size(58, 24);
+            this.CHK_BigSize.TabIndex = 44;
+            this.CHK_BigSize.Text = "Big";
+            this.CHK_BigSize.UseVisualStyleBackColor = true;
+            // 
+            // CHK_NediumSize
+            // 
+            this.CHK_NediumSize.AutoSize = true;
+            this.CHK_NediumSize.Location = new System.Drawing.Point(86, 38);
+            this.CHK_NediumSize.Name = "CHK_NediumSize";
+            this.CHK_NediumSize.Size = new System.Drawing.Size(91, 24);
+            this.CHK_NediumSize.TabIndex = 43;
+            this.CHK_NediumSize.Text = "Medium";
+            this.CHK_NediumSize.UseVisualStyleBackColor = true;
+            // 
+            // CHK_SmallSize
+            // 
+            this.CHK_SmallSize.AutoSize = true;
+            this.CHK_SmallSize.Location = new System.Drawing.Point(6, 38);
+            this.CHK_SmallSize.Name = "CHK_SmallSize";
+            this.CHK_SmallSize.Size = new System.Drawing.Size(74, 24);
+            this.CHK_SmallSize.TabIndex = 42;
+            this.CHK_SmallSize.Text = "Small";
+            this.CHK_SmallSize.UseVisualStyleBackColor = true;
+            // 
+            // CHK_HasLastCooking
+            // 
+            this.CHK_HasLastCooking.AutoSize = true;
+            this.CHK_HasLastCooking.Location = new System.Drawing.Point(115, 244);
+            this.CHK_HasLastCooking.Name = "CHK_HasLastCooking";
+            this.CHK_HasLastCooking.Size = new System.Drawing.Size(22, 21);
+            this.CHK_HasLastCooking.TabIndex = 39;
+            this.CHK_HasLastCooking.UseVisualStyleBackColor = true;
+            this.CHK_HasLastCooking.CheckedChanged += new System.EventHandler(this.CHK_HasLastCooking_CheckedChanged);
+            // 
+            // CAL_LastCookingDate
+            // 
+            this.CAL_LastCookingDate.Enabled = false;
+            this.CAL_LastCookingDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.CAL_LastCookingDate.Location = new System.Drawing.Point(214, 57);
+            this.CAL_LastCookingDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CAL_LastCookingDate.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.CAL_LastCookingDate.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.CAL_LastCookingDate.Name = "CAL_LastCookingDate";
+            this.CAL_LastCookingDate.Size = new System.Drawing.Size(181, 26);
+            this.CAL_LastCookingDate.TabIndex = 38;
+            this.CAL_LastCookingDate.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            // 
+            // L_LastCookingDate
+            // 
+            this.L_LastCookingDate.AutoSize = true;
+            this.L_LastCookingDate.Location = new System.Drawing.Point(209, 32);
+            this.L_LastCookingDate.Name = "L_LastCookingDate";
+            this.L_LastCookingDate.Size = new System.Drawing.Size(150, 20);
+            this.L_LastCookingDate.TabIndex = 37;
+            this.L_LastCookingDate.Text = "Date of last cooking";
             // 
             // L_Medal
             // 
@@ -308,8 +322,22 @@
             this.GB_LastCookingData.TabStop = false;
             this.GB_LastCookingData.Text = "Last cooking datas";
             // 
+            // NUD_NbPokemon2
+            // 
+            this.NUD_NbPokemon2.Location = new System.Drawing.Point(12, 120);
+            this.NUD_NbPokemon2.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.NUD_NbPokemon2.Name = "NUD_NbPokemon2";
+            this.NUD_NbPokemon2.Size = new System.Drawing.Size(149, 26);
+            this.NUD_NbPokemon2.TabIndex = 48;
+            // 
             // CB_EatingLocation2
             // 
+            this.CB_EatingLocation2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CB_EatingLocation2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CB_EatingLocation2.FormattingEnabled = true;
             this.CB_EatingLocation2.Location = new System.Drawing.Point(214, 114);
             this.CB_EatingLocation2.Name = "CB_EatingLocation2";
@@ -363,30 +391,6 @@
             this.NUD_NbCooking.Size = new System.Drawing.Size(63, 26);
             this.NUD_NbCooking.TabIndex = 46;
             // 
-            // NUD_NbPokemon1
-            // 
-            this.NUD_NbPokemon1.Location = new System.Drawing.Point(13, 114);
-            this.NUD_NbPokemon1.Maximum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.NUD_NbPokemon1.Name = "NUD_NbPokemon1";
-            this.NUD_NbPokemon1.Size = new System.Drawing.Size(149, 26);
-            this.NUD_NbPokemon1.TabIndex = 47;
-            // 
-            // NUD_NbPokemon2
-            // 
-            this.NUD_NbPokemon2.Location = new System.Drawing.Point(12, 120);
-            this.NUD_NbPokemon2.Maximum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.NUD_NbPokemon2.Name = "NUD_NbPokemon2";
-            this.NUD_NbPokemon2.Size = new System.Drawing.Size(149, 26);
-            this.NUD_NbPokemon2.TabIndex = 48;
-            // 
             // SAV_CurryDexSWSH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -409,13 +413,13 @@
             this.Text = "Curry Dex Editor";
             this.GB_FirstCookingData.ResumeLayout(false);
             this.GB_FirstCookingData.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon1)).EndInit();
             this.GB_Sizes.ResumeLayout(false);
             this.GB_Sizes.PerformLayout();
             this.GB_LastCookingData.ResumeLayout(false);
             this.GB_LastCookingData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 using PKHeX.Core;
+using PKHeX.WinForms.Properties;
 
 namespace PKHeX.WinForms
 {
@@ -15,8 +14,26 @@ namespace PKHeX.WinForms
         public SAV_CurryDexSWSH(SAV8SWSH sav)
         {
             InitializeComponent();
+            InitializeBinding();
+            PopulateCBLocation();
             WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
             SAV = (SAV8SWSH)(Origin = sav).Clone();
+        }
+
+        private void InitializeBinding()
+        {
+            ComboBox[] cbs = { CB_EatingLocation1, CB_EatingLocation2 };
+            foreach (var cb in cbs)
+            {
+                cb.InitializeBinding();
+            }
+        }
+
+        private void PopulateCBLocation()
+        {
+            var loc = GameInfo.GetLocationList(GameVersion.SW, 8, egg: false);
+            CB_EatingLocation1.DataSource = new BindingSource(loc, null);
+            CB_EatingLocation2.DataSource = new BindingSource(loc, null);
         }
 
         private void B_Cancel_Click(object sender, EventArgs e)
