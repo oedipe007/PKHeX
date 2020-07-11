@@ -214,15 +214,12 @@ namespace PKHeX.WinForms.Properties {
         ///   Looks up a localized string similar to PKHeX - By Kaphotics
         ///http://projectpokemon.org/pkhex/
         ///
-        ///20/04/14 - New Update:
+        ///20/06/22 - New Update:
         /// - Legality:
-        /// - - Added: Latest raid news data.
-        /// - - Fixed: HOME gifts now recognized.
-        /// - - Fixed: Antishiny Colosseum/XD spreads are recognized better for various gifts.
-        /// - - Fixed: Some unavailable evolution cases are now recognized correctly.
-        /// - - Fixed: Silvally Pixie Plate is now recognized correctly.
-        /// - - Fixed: Gen8 Raid downleveling thresholds are now recognized correctly.
-        /// - - Fixed: Gen8 Link trade eggs are no [rest of string was truncated]&quot;;.
+        /// - - Handled edge cases from various reports, and added the event gift data from the recent events.
+        /// - - Fixed: Verification for Neutral nature mint, IoA hatch location, Galarian Slowbro, raid Hidden Ability, Master Rank ribbon.
+        /// - Added: SWSH save file size recognition for 1.0 saves that were directly upgraded to 1.2 (skipped 1.1 unused block additions).
+        /// - Added: Urshifu-1 Gigantamax form now can be toggled  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string changelog {
             get {
@@ -799,6 +796,56 @@ namespace PKHeX.WinForms.Properties {
         public static System.Drawing.Bitmap main {
             get {
                 object obj = ResourceManager.GetObject("main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap medal_1 {
+            get {
+                object obj = ResourceManager.GetObject("medal_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap medal_2 {
+            get {
+                object obj = ResourceManager.GetObject("medal_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap medal_3 {
+            get {
+                object obj = ResourceManager.GetObject("medal_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap medal_4 {
+            get {
+                object obj = ResourceManager.GetObject("medal_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap medal_5 {
+            get {
+                object obj = ResourceManager.GetObject("medal_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

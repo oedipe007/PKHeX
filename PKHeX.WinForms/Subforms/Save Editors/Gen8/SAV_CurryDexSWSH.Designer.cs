@@ -47,8 +47,6 @@
             this.CHK_HasLastCooking = new System.Windows.Forms.CheckBox();
             this.CAL_LastCookingDate = new System.Windows.Forms.DateTimePicker();
             this.L_LastCookingDate = new System.Windows.Forms.Label();
-            this.L_Medal = new System.Windows.Forms.Label();
-            this.CB_Medal = new System.Windows.Forms.ComboBox();
             this.L_NbCooking = new System.Windows.Forms.Label();
             this.CHK_IsNew = new System.Windows.Forms.CheckBox();
             this.GB_LastCookingData = new System.Windows.Forms.GroupBox();
@@ -59,18 +57,36 @@
             this.L_NbPokemon2 = new System.Windows.Forms.Label();
             this.L_PokemonName2 = new System.Windows.Forms.Label();
             this.NUD_NbCooking = new System.Windows.Forms.NumericUpDown();
+            this.B_GiveAll = new System.Windows.Forms.Button();
+            this.RB_Medal1 = new System.Windows.Forms.RadioButton();
+            this.PB_Medal1 = new System.Windows.Forms.PictureBox();
+            this.GB_CurryRank = new System.Windows.Forms.GroupBox();
+            this.PB_Medal5 = new System.Windows.Forms.PictureBox();
+            this.RB_Medal5 = new System.Windows.Forms.RadioButton();
+            this.PB_Medal2 = new System.Windows.Forms.PictureBox();
+            this.RB_Medal2 = new System.Windows.Forms.RadioButton();
+            this.PB_Medal4 = new System.Windows.Forms.PictureBox();
+            this.RB_Medal4 = new System.Windows.Forms.RadioButton();
+            this.PB_Medal3 = new System.Windows.Forms.PictureBox();
+            this.RB_Medal3 = new System.Windows.Forms.RadioButton();
             this.GB_FirstCookingData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon1)).BeginInit();
             this.GB_Sizes.SuspendLayout();
             this.GB_LastCookingData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal1)).BeginInit();
+            this.GB_CurryRank.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal3)).BeginInit();
             this.SuspendLayout();
             // 
             // B_Save
             // 
             this.B_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_Save.Location = new System.Drawing.Point(675, 401);
+            this.B_Save.Location = new System.Drawing.Point(729, 484);
             this.B_Save.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B_Save.Name = "B_Save";
             this.B_Save.Size = new System.Drawing.Size(112, 35);
@@ -82,7 +98,7 @@
             // B_Cancel
             // 
             this.B_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_Cancel.Location = new System.Drawing.Point(554, 401);
+            this.B_Cancel.Location = new System.Drawing.Point(609, 484);
             this.B_Cancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B_Cancel.Name = "B_Cancel";
             this.B_Cancel.Size = new System.Drawing.Size(112, 35);
@@ -95,10 +111,11 @@
             // 
             this.LB_AllCurry.FormattingEnabled = true;
             this.LB_AllCurry.ItemHeight = 20;
-            this.LB_AllCurry.Location = new System.Drawing.Point(554, 12);
+            this.LB_AllCurry.Location = new System.Drawing.Point(607, 12);
             this.LB_AllCurry.Name = "LB_AllCurry";
-            this.LB_AllCurry.Size = new System.Drawing.Size(234, 364);
+            this.LB_AllCurry.Size = new System.Drawing.Size(234, 424);
             this.LB_AllCurry.TabIndex = 4;
+            this.LB_AllCurry.SelectedIndexChanged += new System.EventHandler(this.LB_AllCurry_SelectedIndexChanged);
             // 
             // GB_FirstCookingData
             // 
@@ -110,7 +127,7 @@
             this.GB_FirstCookingData.Controls.Add(this.L_EatingLocation1);
             this.GB_FirstCookingData.Controls.Add(this.L_NbPokemon1);
             this.GB_FirstCookingData.Controls.Add(this.L_PokemonName1);
-            this.GB_FirstCookingData.Location = new System.Drawing.Point(142, 86);
+            this.GB_FirstCookingData.Location = new System.Drawing.Point(177, 86);
             this.GB_FirstCookingData.Name = "GB_FirstCookingData";
             this.GB_FirstCookingData.Size = new System.Drawing.Size(406, 152);
             this.GB_FirstCookingData.TabIndex = 8;
@@ -200,7 +217,7 @@
             this.GB_Sizes.Controls.Add(this.CHK_BigSize);
             this.GB_Sizes.Controls.Add(this.CHK_NediumSize);
             this.GB_Sizes.Controls.Add(this.CHK_SmallSize);
-            this.GB_Sizes.Location = new System.Drawing.Point(143, 12);
+            this.GB_Sizes.Location = new System.Drawing.Point(178, 12);
             this.GB_Sizes.Name = "GB_Sizes";
             this.GB_Sizes.Size = new System.Drawing.Size(242, 68);
             this.GB_Sizes.TabIndex = 43;
@@ -240,7 +257,9 @@
             // CHK_HasLastCooking
             // 
             this.CHK_HasLastCooking.AutoSize = true;
-            this.CHK_HasLastCooking.Location = new System.Drawing.Point(115, 244);
+            this.CHK_HasLastCooking.Checked = true;
+            this.CHK_HasLastCooking.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_HasLastCooking.Location = new System.Drawing.Point(176, 254);
             this.CHK_HasLastCooking.Name = "CHK_HasLastCooking";
             this.CHK_HasLastCooking.Size = new System.Drawing.Size(22, 21);
             this.CHK_HasLastCooking.TabIndex = 39;
@@ -269,27 +288,10 @@
             this.L_LastCookingDate.TabIndex = 37;
             this.L_LastCookingDate.Text = "Date of last cooking";
             // 
-            // L_Medal
-            // 
-            this.L_Medal.AutoSize = true;
-            this.L_Medal.Location = new System.Drawing.Point(12, 12);
-            this.L_Medal.Name = "L_Medal";
-            this.L_Medal.Size = new System.Drawing.Size(121, 20);
-            this.L_Medal.TabIndex = 10;
-            this.L_Medal.Text = "Obtained Medal";
-            // 
-            // CB_Medal
-            // 
-            this.CB_Medal.FormattingEnabled = true;
-            this.CB_Medal.Location = new System.Drawing.Point(16, 35);
-            this.CB_Medal.Name = "CB_Medal";
-            this.CB_Medal.Size = new System.Drawing.Size(121, 28);
-            this.CB_Medal.TabIndex = 9;
-            // 
             // L_NbCooking
             // 
             this.L_NbCooking.AutoSize = true;
-            this.L_NbCooking.Location = new System.Drawing.Point(138, 408);
+            this.L_NbCooking.Location = new System.Drawing.Point(179, 445);
             this.L_NbCooking.Name = "L_NbCooking";
             this.L_NbCooking.Size = new System.Drawing.Size(142, 20);
             this.L_NbCooking.TabIndex = 10;
@@ -298,7 +300,7 @@
             // CHK_IsNew
             // 
             this.CHK_IsNew.AutoSize = true;
-            this.CHK_IsNew.Location = new System.Drawing.Point(398, 50);
+            this.CHK_IsNew.Location = new System.Drawing.Point(434, 50);
             this.CHK_IsNew.Name = "CHK_IsNew";
             this.CHK_IsNew.Size = new System.Drawing.Size(150, 24);
             this.CHK_IsNew.TabIndex = 45;
@@ -315,9 +317,9 @@
             this.GB_LastCookingData.Controls.Add(this.L_PokemonName2);
             this.GB_LastCookingData.Controls.Add(this.CAL_LastCookingDate);
             this.GB_LastCookingData.Controls.Add(this.L_LastCookingDate);
-            this.GB_LastCookingData.Location = new System.Drawing.Point(143, 244);
+            this.GB_LastCookingData.Location = new System.Drawing.Point(178, 281);
             this.GB_LastCookingData.Name = "GB_LastCookingData";
-            this.GB_LastCookingData.Size = new System.Drawing.Size(406, 152);
+            this.GB_LastCookingData.Size = new System.Drawing.Size(406, 155);
             this.GB_LastCookingData.TabIndex = 42;
             this.GB_LastCookingData.TabStop = false;
             this.GB_LastCookingData.Text = "Last cooking datas";
@@ -381,7 +383,7 @@
             // 
             // NUD_NbCooking
             // 
-            this.NUD_NbCooking.Location = new System.Drawing.Point(286, 405);
+            this.NUD_NbCooking.Location = new System.Drawing.Point(327, 442);
             this.NUD_NbCooking.Maximum = new decimal(new int[] {
             256,
             0,
@@ -391,11 +393,145 @@
             this.NUD_NbCooking.Size = new System.Drawing.Size(63, 26);
             this.NUD_NbCooking.TabIndex = 46;
             // 
+            // B_GiveAll
+            // 
+            this.B_GiveAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_GiveAll.Location = new System.Drawing.Point(489, 484);
+            this.B_GiveAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.B_GiveAll.Name = "B_GiveAll";
+            this.B_GiveAll.Size = new System.Drawing.Size(112, 35);
+            this.B_GiveAll.TabIndex = 47;
+            this.B_GiveAll.Text = "Give All";
+            this.B_GiveAll.UseVisualStyleBackColor = true;
+            // 
+            // RB_Medal1
+            // 
+            this.RB_Medal1.AutoSize = true;
+            this.RB_Medal1.Checked = true;
+            this.RB_Medal1.Location = new System.Drawing.Point(6, 53);
+            this.RB_Medal1.Name = "RB_Medal1";
+            this.RB_Medal1.Size = new System.Drawing.Size(34, 24);
+            this.RB_Medal1.TabIndex = 48;
+            this.RB_Medal1.TabStop = true;
+            this.RB_Medal1.Text = "\r\n";
+            this.RB_Medal1.UseVisualStyleBackColor = true;
+            // 
+            // PB_Medal1
+            // 
+            this.PB_Medal1.Image = global::PKHeX.WinForms.Properties.Resources.medal_1;
+            this.PB_Medal1.Location = new System.Drawing.Point(46, 25);
+            this.PB_Medal1.Name = "PB_Medal1";
+            this.PB_Medal1.Size = new System.Drawing.Size(77, 78);
+            this.PB_Medal1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Medal1.TabIndex = 49;
+            this.PB_Medal1.TabStop = false;
+            // 
+            // GB_CurryRank
+            // 
+            this.GB_CurryRank.Controls.Add(this.PB_Medal5);
+            this.GB_CurryRank.Controls.Add(this.RB_Medal5);
+            this.GB_CurryRank.Controls.Add(this.PB_Medal2);
+            this.GB_CurryRank.Controls.Add(this.RB_Medal2);
+            this.GB_CurryRank.Controls.Add(this.PB_Medal4);
+            this.GB_CurryRank.Controls.Add(this.RB_Medal4);
+            this.GB_CurryRank.Controls.Add(this.PB_Medal3);
+            this.GB_CurryRank.Controls.Add(this.RB_Medal3);
+            this.GB_CurryRank.Controls.Add(this.PB_Medal1);
+            this.GB_CurryRank.Controls.Add(this.RB_Medal1);
+            this.GB_CurryRank.Location = new System.Drawing.Point(12, 12);
+            this.GB_CurryRank.Name = "GB_CurryRank";
+            this.GB_CurryRank.Size = new System.Drawing.Size(144, 510);
+            this.GB_CurryRank.TabIndex = 50;
+            this.GB_CurryRank.TabStop = false;
+            this.GB_CurryRank.Text = "Rank";
+            // 
+            // PB_Medal5
+            // 
+            this.PB_Medal5.Image = global::PKHeX.WinForms.Properties.Resources.medal_5;
+            this.PB_Medal5.Location = new System.Drawing.Point(46, 405);
+            this.PB_Medal5.Name = "PB_Medal5";
+            this.PB_Medal5.Size = new System.Drawing.Size(77, 96);
+            this.PB_Medal5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Medal5.TabIndex = 57;
+            this.PB_Medal5.TabStop = false;
+            // 
+            // RB_Medal5
+            // 
+            this.RB_Medal5.AutoSize = true;
+            this.RB_Medal5.Location = new System.Drawing.Point(6, 433);
+            this.RB_Medal5.Name = "RB_Medal5";
+            this.RB_Medal5.Size = new System.Drawing.Size(34, 24);
+            this.RB_Medal5.TabIndex = 56;
+            this.RB_Medal5.Text = "\r\n";
+            this.RB_Medal5.UseVisualStyleBackColor = true;
+            // 
+            // PB_Medal2
+            // 
+            this.PB_Medal2.Image = global::PKHeX.WinForms.Properties.Resources.medal_2;
+            this.PB_Medal2.Location = new System.Drawing.Point(46, 109);
+            this.PB_Medal2.Name = "PB_Medal2";
+            this.PB_Medal2.Size = new System.Drawing.Size(77, 78);
+            this.PB_Medal2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Medal2.TabIndex = 55;
+            this.PB_Medal2.TabStop = false;
+            // 
+            // RB_Medal2
+            // 
+            this.RB_Medal2.AutoSize = true;
+            this.RB_Medal2.Location = new System.Drawing.Point(6, 138);
+            this.RB_Medal2.Name = "RB_Medal2";
+            this.RB_Medal2.Size = new System.Drawing.Size(34, 24);
+            this.RB_Medal2.TabIndex = 54;
+            this.RB_Medal2.Text = "\r\n";
+            this.RB_Medal2.UseVisualStyleBackColor = true;
+            // 
+            // PB_Medal4
+            // 
+            this.PB_Medal4.Image = global::PKHeX.WinForms.Properties.Resources.medal_4;
+            this.PB_Medal4.Location = new System.Drawing.Point(46, 296);
+            this.PB_Medal4.Name = "PB_Medal4";
+            this.PB_Medal4.Size = new System.Drawing.Size(77, 103);
+            this.PB_Medal4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Medal4.TabIndex = 53;
+            this.PB_Medal4.TabStop = false;
+            // 
+            // RB_Medal4
+            // 
+            this.RB_Medal4.AutoSize = true;
+            this.RB_Medal4.Location = new System.Drawing.Point(6, 330);
+            this.RB_Medal4.Name = "RB_Medal4";
+            this.RB_Medal4.Size = new System.Drawing.Size(34, 24);
+            this.RB_Medal4.TabIndex = 52;
+            this.RB_Medal4.Text = "\r\n";
+            this.RB_Medal4.UseVisualStyleBackColor = true;
+            // 
+            // PB_Medal3
+            // 
+            this.PB_Medal3.Image = global::PKHeX.WinForms.Properties.Resources.medal_3;
+            this.PB_Medal3.Location = new System.Drawing.Point(46, 193);
+            this.PB_Medal3.Name = "PB_Medal3";
+            this.PB_Medal3.Size = new System.Drawing.Size(77, 97);
+            this.PB_Medal3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Medal3.TabIndex = 51;
+            this.PB_Medal3.TabStop = false;
+            // 
+            // RB_Medal3
+            // 
+            this.RB_Medal3.AutoSize = true;
+            this.RB_Medal3.Location = new System.Drawing.Point(6, 224);
+            this.RB_Medal3.Name = "RB_Medal3";
+            this.RB_Medal3.Size = new System.Drawing.Size(34, 24);
+            this.RB_Medal3.TabIndex = 50;
+            this.RB_Medal3.Text = "\r\n";
+            this.RB_Medal3.UseVisualStyleBackColor = true;
+            // 
             // SAV_CurryDexSWSH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(853, 533);
+            this.Controls.Add(this.GB_CurryRank);
+            this.Controls.Add(this.B_GiveAll);
             this.Controls.Add(this.NUD_NbCooking);
             this.Controls.Add(this.GB_LastCookingData);
             this.Controls.Add(this.CHK_IsNew);
@@ -406,8 +542,6 @@
             this.Controls.Add(this.B_Save);
             this.Controls.Add(this.L_NbCooking);
             this.Controls.Add(this.B_Cancel);
-            this.Controls.Add(this.L_Medal);
-            this.Controls.Add(this.CB_Medal);
             this.Icon = global::PKHeX.WinForms.Properties.Resources.Icon;
             this.Name = "SAV_CurryDexSWSH";
             this.Text = "Curry Dex Editor";
@@ -420,6 +554,13 @@
             this.GB_LastCookingData.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbPokemon2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_NbCooking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal1)).EndInit();
+            this.GB_CurryRank.ResumeLayout(false);
+            this.GB_CurryRank.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Medal3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,8 +571,6 @@
         private System.Windows.Forms.Button B_Cancel;
         private System.Windows.Forms.ListBox LB_AllCurry;
         private System.Windows.Forms.GroupBox GB_FirstCookingData;
-        private System.Windows.Forms.Label L_Medal;
-        private System.Windows.Forms.ComboBox CB_Medal;
         private System.Windows.Forms.DateTimePicker CAL_FirstCookingDate;
         private System.Windows.Forms.Label L_FirstCookingDate;
         private System.Windows.Forms.DateTimePicker CAL_LastCookingDate;
@@ -457,5 +596,17 @@
         private System.Windows.Forms.NumericUpDown NUD_NbPokemon1;
         private System.Windows.Forms.NumericUpDown NUD_NbCooking;
         private System.Windows.Forms.NumericUpDown NUD_NbPokemon2;
+        private System.Windows.Forms.Button B_GiveAll;
+        private System.Windows.Forms.RadioButton RB_Medal1;
+        private System.Windows.Forms.PictureBox PB_Medal1;
+        private System.Windows.Forms.GroupBox GB_CurryRank;
+        private System.Windows.Forms.PictureBox PB_Medal5;
+        private System.Windows.Forms.RadioButton RB_Medal5;
+        private System.Windows.Forms.PictureBox PB_Medal2;
+        private System.Windows.Forms.RadioButton RB_Medal2;
+        private System.Windows.Forms.PictureBox PB_Medal4;
+        private System.Windows.Forms.RadioButton RB_Medal4;
+        private System.Windows.Forms.PictureBox PB_Medal3;
+        private System.Windows.Forms.RadioButton RB_Medal3;
     }
 }
